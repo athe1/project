@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta caeset="utf-8" />
-    <title>³ÈÒ¶´´×÷ÉçÇø</title>
+    <meta charset="utf-8" />
+    <title>æ©™å¶åˆ›ä½œç¤¾åŒº</title>
     <style type="text/css">
         /**{
                 padding:0;
@@ -15,7 +15,7 @@
         }
 
         .list {
-            list-style: none; /*³£ÓÃ*/
+            list-style: none; /*å¸¸ç”¨*/
             /* width: 800px;*/
             width: 1525px;
             height: 400px;
@@ -29,7 +29,7 @@
             height: 100%;
             color: white;
             font-size: 50px;
-            opacity: 0; /*Í¸Ã÷µÄ µ­Èëµ­³öĞ§¹û*/
+            opacity: 0; /*é€æ˜çš„ æ·¡å…¥æ·¡å‡ºæ•ˆæœ*/
             transition: all .5s;
         }
 
@@ -68,7 +68,7 @@
         #goNext {
             right: 0px;
         }
-        /*   .activeÀà   */
+        /*   .activeç±»   */
         .item.active {
             opacity: 1;
             z-index: 10;
@@ -101,7 +101,7 @@
             background-color: rgba(255,255,255,0.9);
         }
 
-        /*µ÷ÕûÍ¼Æ¬*/
+        /*è°ƒæ•´å›¾ç‰‡*/
         .wrap > ul > li > img {
             width: 1525px;
             height: 500px;
@@ -115,7 +115,7 @@
             margin:0;
             color: orange;
             font-size: 30px;
-            font-family: "¿¬Ìå";
+            font-family: "æ¥·ä½“";
             display: inline-block;
         }
     </style>
@@ -144,15 +144,15 @@
     </div>
 
     <script type="text/javascript">
-        var items = document.getElementsByClassName('item');//Í¼Æ¬
-        var points = document.getElementsByClassName('point');//µã
+        var items = document.getElementsByClassName('item');//å›¾ç‰‡
+        var points = document.getElementsByClassName('point');//ç‚¹
         var goPreBtn = document.getElementById('goPre');
         var goNextBtn = document.getElementById('goNext');
 
 
-        var time = 0;//¶¨Ê±Æ÷Í¼Æ¬²ÎÊı
-        var index = 0;//index ±íÊ¾µÚ¼¸ÕÅÍ¼Æ¬ÔÚÕ¹Ê¾ µÚindexÕÅÍ¼Æ¬´æÔÚactiveÕâ¸öÀàÃû
-        //±íÊ¾µÚ¼¸¸öµãÔÚÕ¹Ê¾
+        var time = 0;//å®šæ—¶å™¨å›¾ç‰‡å‚æ•°
+        var index = 0;//index è¡¨ç¤ºç¬¬å‡ å¼ å›¾ç‰‡åœ¨å±•ç¤º ç¬¬indexå¼ å›¾ç‰‡å­˜åœ¨activeè¿™ä¸ªç±»å
+        //è¡¨ç¤ºç¬¬å‡ ä¸ªç‚¹åœ¨å±•ç¤º
 
         var clearActive = function () {
             for (var i = 0; i < items.length; i++) {
@@ -195,18 +195,18 @@
 
         goNextBtn.addEventListener('click', function () {
             goNext();
-            time = 0;//µã»÷°´Å¥ºótime=0,Ìá¸ßÔÄ¶ÁĞ§¹û
+            time = 0;//ç‚¹å‡»æŒ‰é’®åtime=0,æé«˜é˜…è¯»æ•ˆæœ
         })
 
         goPreBtn.addEventListener('click', function () {
             goPre();
-            time = 0;//µã»÷°´Å¥ºótime=0,Ìá¸ßÔÄ¶ÁĞ§¹û
+            time = 0;//ç‚¹å‡»æŒ‰é’®åtime=0,æé«˜é˜…è¯»æ•ˆæœ
         })
 
 
         for (var i = 0; i < points.length; i++) {
             points[i].addEventListener('click', function () {
-                time = 0;//µã»÷°´Å¥ºótime=0,Ìá¸ßÔÄ¶ÁĞ§¹û
+                time = 0;//ç‚¹å‡»æŒ‰é’®åtime=0,æé«˜é˜…è¯»æ•ˆæœ
                 var pointIndex = this.getAttribute('data-index');
                 console.log(pointIndex);
                 index = pointIndex;
@@ -215,13 +215,13 @@
             })
         }
 
-        //5000ms,Ìø×ªÒ»´Î
+        //5000ms,è·³è½¬ä¸€æ¬¡
 
         setInterval(function () {
             time++;
             if (time == 50) {
                 goNext();
-                time = 0;//µã»÷°´Å¥ºótime=0,±£Ö¤ÔÄ¶ÁĞ§¹û
+                time = 0;//ç‚¹å‡»æŒ‰é’®åtime=0,ä¿è¯é˜…è¯»æ•ˆæœ
             }
 
             /*
