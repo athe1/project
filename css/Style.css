@@ -21,7 +21,7 @@
     height: 100%;
     color: white;
     font-size: 50px;
-    opacity: 0; /*Í¸Ã÷µÄ µ­Èëµ­³öÐ§¹û*/
+    opacity: 0; /*é€æ˜Žçš„ æ·¡å…¥æ·¡å‡ºæ•ˆæžœ*/
     transition: all .5s;
 }
 
@@ -121,17 +121,17 @@
     left: 100px;
     z-index: 100;
     text-decoration: none;
-    font-family: "¿¬Ìå";
+    font-family: "æ¥·ä½“";
     font-size: 30px;
     color: white;
 }
 
 .link {
-    font-family: "¿¬Ìå";
+    font-family: "æ¥·ä½“";
     font-size: 26px;
     position: absolute;
     top: 26px;
-    right: 400px;
+    right: 300px;
     z-index: 100;
 }
 
@@ -141,7 +141,7 @@
     text-decoration: none;
 }
 
-/*   .activeÀà   */
+/*   .activeç±»   */
 .item.active {
     opacity: 1;
     z-index: 10;
@@ -173,7 +173,7 @@
     background-color: rgba(255,255,255,0.9);
 }
 
-/*µ÷ÕûÍ¼Æ¬*/
+/*è°ƒæ•´å›¾ç‰‡*/
 .wrap > ul > li > img {
     width: 1525px;
     height: 500px;
@@ -188,6 +188,6 @@
     margin: 0;
     color: orange;
     font-size: 30px;
-    font-family: "¿¬Ìå";
+    font-family: "æ¥·ä½“";
     display: inline-block;
 }
