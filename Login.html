@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta carset="utf-8" />
+        <meta charset="utf-8" />
         <title>Web</title>
         <style>
             /*button{
@@ -37,7 +37,7 @@
             #error {
                 color: red;
                 margin-left: 30px;
-                font-family: ¿¬Ìå;
+                font-family: æ¥·ä½“;
                 font-weight: bold;
             }
         </style>
@@ -46,22 +46,22 @@
         <div class="fream">
             <div class="fream1">
                 <!--<form action="#" method="post"> </form>-->
-                ÕËºÅ&nbsp;&nbsp;&nbsp;<input type="text" name="name" id="user" /><br /><br />
-                ÃÜÂë&nbsp;&nbsp;&nbsp;<input type="password" name="name1" id="pwd" /><br /><br />
-                <!--<input type="button" name="name" value="µÇÂ¼" />
-                <input type="button" name="name" value="×¢²á" id="zhuce" />
+                è´¦å·&nbsp;&nbsp;&nbsp;<input type="text" name="name" id="user" /><br /><br />
+                å¯†ç &nbsp;&nbsp;&nbsp;<input type="password" name="name1" id="pwd" /><br /><br />
+                <!--<input type="button" name="name" value="ç™»å½•" />
+                <input type="button" name="name" value="æ³¨å†Œ" id="zhuce" />
                 -->
 
-                <button id="btn" class="login">µÇÂ¼</button>  <!--onclick="isNull()"-->
-                <button id="btn1" class="sign">×¢²á</button><br />
+                <button id="btn" class="login">ç™»å½•</button>  <!--onclick="isNull()"-->
+                <button id="btn1" class="sign">æ³¨å†Œ</button><br />
                 <span id="error"></span>
 
             </div>
         </div>
 
         <!--<form action="http://baidu.com" method="get">
-            Êı×Ö<input type="text" name="name" value="" />
-            <input type="submit" name="submit" value="Ìá½»" />
+            æ•°å­—<input type="text" name="name" value="" />
+            <input type="submit" name="submit" value="æäº¤" />
             </form>
         -->
         <script>
@@ -70,7 +70,7 @@
 
              But.onclick = function () {
                  if (input == '' || input1 == '') {
-                     alter("ÕËºÅ»òÃÜÂë²»ÄÜÎªNull");
+                     alter("è´¦å·æˆ–å¯†ç ä¸èƒ½ä¸ºNull");
                  }
              }
 
@@ -79,7 +79,7 @@
              var isNull = function () {
                  var user1 = document.getElementById('user').value;
                  if (user1 == '') {
-                     window.alert("ÕËºÅ»òÃÜÂë²»ÄÜÎªNull");
+                     window.alert("è´¦å·æˆ–å¯†ç ä¸èƒ½ä¸ºNull");
                  }
              }
 
@@ -96,18 +96,18 @@
                 var pwd = document.getElementById('pwd').value;
 
                 if (user == '' || user == null) {
-                    document.getElementById('error').innerHTML = "ÇëÌîĞ´ÕËºÅ";
+                    document.getElementById('error').innerHTML = "è¯·å¡«å†™è´¦å·";
                 } else if (pwd == '' || pwd == null) {
-                    //window.alert('ÃÜÂë²»ÄÜÎªNull');
-                    document.getElementById('error').innerHTML = "ÇëÌîĞ´ÃÜÂë";
+                    //window.alert('å¯†ç ä¸èƒ½ä¸ºNull');
+                    document.getElementById('error').innerHTML = "è¯·å¡«å†™å¯†ç ";
                 } else {
-                    document.getElementById('error').innerHTML = "ÏµÍ³ÕıÔÚ²âÊÔ";
+                    document.getElementById('error').innerHTML = "ç³»ç»Ÿæ­£åœ¨æµ‹è¯•";
                 }
 
             }
 
                     //window.location.href = "127.0.0.1?u_id=" + user + "&u_pwd=" + pwd;
-                    //document.location.href   µ±Ç°Ò³Ãæ
+                    //document.location.href   å½“å‰é¡µé¢
         </script>
 
     </body>
