@@ -22,7 +22,7 @@ body {
     height: 100%;
     color: white;
     font-size: 50px;
-    opacity: 0; 
+    opacity: 0; /*透明的 淡入淡出效果*/
     transition: all .5s;   
 }
 
@@ -61,6 +61,11 @@ body {
     cursor: pointer;
 }
 
+/*
+.btn:hover{
+    background-color:orange;
+}
+*/
 
 #goPre {
     left: 0px;
@@ -82,7 +87,8 @@ body {
     color: white;
     border-radius: 50%;
     font-weight: bolder;
-    
+    /*border: 1px solid;
+    border-color: orange;*/
 }
 
 #theam {
@@ -146,6 +152,7 @@ body {
     color:orange;
 }
 
+/*   .active类   */
 .item.active {
     opacity: 1;
     z-index: 10;
@@ -177,7 +184,7 @@ body {
     background-color: rgba(255,255,255,0.9);
 }
 
-
+/*控制图片，调整图片*/
 .wrap > ul > li > img {
     width: 1536px;
     height: 500px;
@@ -188,6 +195,48 @@ body {
     height: 500px;
 }
 
+
+
+.wrap > .new {
+    /*position:absolute;*/
+    border-radius: 10%;
+    border: 1px;
+    border-style: none;
+    width: 300px;
+    height: 300px;
+    margin-left: 650px;
+    background: #eeeeee;
+}
+
+.wrap>.new>.input>p{
+    display:inline;
+}
+
+.wrap>.new>.new_link{
+    text-decoration:none;
+    color:orange;
+    text-align:left;
+    font-size:30px;
+    font-family:"楷体";
+    font-weight:bolder;
+    margin-left:15px;
+    margin-top:6px;
+}
+
+.wrap>.new>.new_link>.new_link_art{
+
+}
+
+.wrap > .new > .new_link > .new_link_art > img {    
+    width: 250px;
+    height: 150px;
+    display: block;
+   
+}
+
+
+
+/*
 .h1 {
     margin: 0;
     color: orange;
@@ -195,21 +244,41 @@ body {
     font-family: "楷体";
     display: inline-block;
 }
-
 .article {
-    
+    /* 边框设计 
     margin-left: 40%;
     border: 3px solid orange;
     border-radius: 3%;
     width: 300px;
     height: 100px;
-    text-align: left;
+    text-align: left;  
+}
+
+.wrap > .linka {
+    width: 1px;
+    height: 1px;
+    margin-left: 0;
+    text-decoration: none;
+    display:inline;
+}
+
+.imga{
+    width:50px;
+    height:50px;
+    left:15px;
+}
+
+.article > p {
+    color: orange;
+}
+
+
+.article > a {
+    font-size:30px;
+    color: orange;
+    text-decoration: none;
+    font-family:"楷体";
+    font-weight:bolder;
     
 }
-
-.wrap>.linka{
-    width:10px;
-    height:10px;
-    margin:0;
-}
-
+*/
