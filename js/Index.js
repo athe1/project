@@ -1,12 +1,12 @@
-var items = document.getElementsByClassName('item');//Í¼Æ¬
-var points = document.getElementsByClassName('point');//µã
+var items = document.getElementsByClassName('item');//å›¾ç‰‡
+var points = document.getElementsByClassName('point');//ç‚¹
 var goPreBtn = document.getElementById('goPre');
 var goNextBtn = document.getElementById('goNext');
 var stop = document.getElementById('stop');
 
 
-var time = 0;//¶¨Ê±Æ÷Í¼Æ¬²ÎÊı,µã»÷°´Å¥ºótime=0,Ìá¸ßÔÄ¶ÁĞ§¹û
-var index = 0;//index ±íÊ¾µÚ¼¸ÕÅÍ¼Æ¬ÔÚÕ¹Ê¾ µÚindexÕÅÍ¼Æ¬´æÔÚactiveÕâ¸öÀàÃû,±íÊ¾µÚ¼¸¸öµãÔÚÕ¹Ê¾
+var time = 0;//å®šæ—¶å™¨å›¾ç‰‡å‚æ•°,ç‚¹å‡»æŒ‰é’®åtime=0,æé«˜é˜…è¯»æ•ˆæœ
+var index = 0;//index è¡¨ç¤ºç¬¬å‡ å¼ å›¾ç‰‡åœ¨å±•ç¤º ç¬¬indexå¼ å›¾ç‰‡å­˜åœ¨activeè¿™ä¸ªç±»å,è¡¨ç¤ºç¬¬å‡ ä¸ªç‚¹åœ¨å±•ç¤º
 
 
 var clearActive = function () {
@@ -45,7 +45,7 @@ var goPre = function () {
 
 goNextBtn.addEventListener('click', function () {
         goNext();
-        time = 0;//µã»÷°´Å¥ºótime=0,Ìá¸ßÔÄ¶ÁĞ§¹û
+        time = 0;//ç‚¹å‡»æŒ‰é’®åtime=0,æé«˜é˜…è¯»æ•ˆæœ
 })
 
 goPreBtn.addEventListener('click', function () {
@@ -79,7 +79,7 @@ stop.addEventListener('click', function () {
         console.log('boolean:' + boolean);
 })
 
-//5000ms,Ìø×ªÒ»´Î
+//5000ms,è·³è½¬ä¸€æ¬¡
 setInterval(function () {
     time++;
     if (time == 50) {
@@ -90,13 +90,42 @@ setInterval(function () {
 
 
 
-//ÇĞ»»Ö÷Ìâº¯Êı
+//åˆ‡æ¢ä¸»é¢˜å‡½æ•°
 var t = 0;
 function changeTheam() {
     t++;
     if (t % 2 == 0) {
-        document.body.style.background = 'white';//²»ÄÜÊ¹ÓÃ#¶¨ÒåÑÕÉ«
+        document.body.style.background = 'white';//ä¸èƒ½ä½¿ç”¨#å®šä¹‰é¢œè‰²
     } else {
         document.body.style.background = 'steelblue';
     }
+}
+
+
+/*è¯„è®º*/
+var ping = document.getElementById('comment');
+var num1 = 0;
+
+ping.onclick = function () {
+    num1++;
+    document.getElementById('comment_p').innerHTML = num1;
+}
+
+
+/*å…³æ³¨*/
+var guan = document.getElementById('attention');
+var num2 = 0;
+
+guan.addEventListener('click', function () {
+    num2++;
+    document.getElementById('attention_p').innerHTML = num2;
+})
+
+
+
+/*ç‚¹èµ*/
+var num3 = 0;
+function give_a_like() {
+    num3++;
+    document.getElementById('like_p').innerHTML = num3;
 }
