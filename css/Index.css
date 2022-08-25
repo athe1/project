@@ -22,7 +22,7 @@ body {
     height: 100%;
     color: white;
     font-size: 50px;
-    opacity: 0; /*透明的 淡入淡出效果*/
+    opacity: 0; 
     transition: all .5s;   
 }
 
@@ -61,11 +61,6 @@ body {
     cursor: pointer;
 }
 
-/*
-.btn:hover{
-    background-color:orange;
-}
-*/
 
 #goPre {
     left: 0px;
@@ -87,8 +82,7 @@ body {
     color: white;
     border-radius: 50%;
     font-weight: bolder;
-    /*border: 1px solid;
-    border-color: orange;*/
+    
 }
 
 #theam {
@@ -123,7 +117,7 @@ body {
     left: 100px;
     z-index: 100;
     text-decoration: none;
-    font-family: "楷体";
+    font-family: "妤蜂綋";
     font-size: 26px;
     color: white;
 }
@@ -134,7 +128,7 @@ body {
 }
 
 .link {
-    font-family: "楷体";
+    font-family: "妤蜂綋";
     font-size: 26px;
     position: absolute;
     top: 10px;
@@ -152,7 +146,6 @@ body {
     color:orange;
 }
 
-/*   .active类   */
 .item.active {
     opacity: 1;
     z-index: 10;
@@ -184,7 +177,7 @@ body {
     background-color: rgba(255,255,255,0.9);
 }
 
-/*控制图片，调整图片*/
+
 .wrap > ul > li > img {
     width: 1536px;
     height: 500px;
@@ -199,12 +192,12 @@ body {
     margin: 0;
     color: orange;
     font-size: 30px;
-    font-family: "楷体";
+    font-family: "妤蜂綋";
     display: inline-block;
 }
 
 .article {
-    /* 边框设计 */
+    
     margin-left: 40%;
     border: 3px solid orange;
     border-radius: 3%;
@@ -220,13 +213,3 @@ body {
     margin:0;
 }
 
-/*
-.article > a {
-    font-size:30px;
-    color: orange;
-    text-decoration: none;
-    font-family:"楷体";
-    font-weight:bolder;
-    
-}
-*/
