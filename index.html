@@ -6,7 +6,7 @@
             <link href="./css/Index.css" rel="stylesheet" type="text/css"/>
             <link href="./img/love.ico" rel="icon" type="image/x-icon" />
         </head>
-        <body>
+        <body>          
             <div class="wrap">
                 <ul class="list">
                     <li class="item active"><a href="https://www.baidu.com"><img id="img1" src="./img/a1.png" alt="Alternate Text" /></a></li>
@@ -28,7 +28,7 @@
                 <button type="button" class="btn" id="theam" onclick="changeTheam()">主题</button>
                 <button type="button" class="btn" id="more">通知</button>
                 <a href="#" class="link1">橙叶创作社区</a>
-               
+
                 <div class="link">
                     <a href="#">首页</a>
                     <a href="#">文章</a>
@@ -37,14 +37,38 @@
                     <a href="./Login.html">登录</a>
                 </div>
 
-                <a href="./article.html"  class="linka">
-                    <div class="article">
-                        简介
-                    </div>
-                </a>
+                <!--
+                    <a href="./article.html"  class="linka">
+                        <div class="article">
+                            <img src="./img/love.ico" alt="Alternate Text"  class="imga" />
+                            <p>简介</p>
+                        </div>
+                    </a>
+    -->
 
+
+
+                <div class="new">
+                    <a href="https://www.baidu.com" class="new_link">
+                        <div class="new_link_art">
+                            <img src="./img/a1.png" alt="Alternate Text" />
+                            简介
+                        </div>
+                    </a>
+
+                    <div class="input">
+                        <input type="button" name="name" value="评论" id="comment"/>
+                        <p id="comment_p">0</p>&nbsp;&nbsp;&nbsp;
+                        <input type="button" name="name" value="关注" id="attention"/>
+                        <p id="attention_p">0</p>&nbsp;&nbsp;&nbsp;
+                        <input type="button" name="name" value="点赞" onclick="give_a_like()" />
+                        <p id="like_p">0</p>
+                    </div>
+                </div>
             </div>
             
+            
+
             <script src="./js/Index.js" type="text/javascript"></script>
         </body>
 </html> 
